@@ -87,4 +87,17 @@ def get_chain():
                 'length of chain': len(blockchain.chain)}
     return jsonify(response), 200
 
+# Checking if the blockchain is valid
+@app.route('/check_validity', methods = ['GET'])
+def check_validity():
+    validity = blockchain.verify_chain(blockchain.chain)
+    if validity == True:
+        response = {"message": "The chain is valid"}
+    else:
+        response = {"message": "The chain is invalid"}
+    return jsonify(response), 200
+
 app.run(host = '0.0.0.0', port = 5000)
+
+
+
