@@ -1,3 +1,4 @@
+
 import datetime
 import hashlib
 import json
@@ -110,7 +111,7 @@ blockchain = Blockchain()
 def mine_block():
     prev_block = blockchain.get_prev_block()
     proof_of_work = blockchain.get_proof_of_work(prev_block['nonce'])
-    blockchain.add_transactions(sender = node_address, receiver = 'Aashay', amount = 1)
+    blockchain.add_transactions(sender = node_address, receiver = 'Tozi', amount = 1)
     prev_hash = blockchain.hash(prev_block)
     new_block = blockchain.create_block(proof_of_work, prev_hash)
     response = {'message': 'We mined a new block',
@@ -177,7 +178,7 @@ def check_validity():
 # Decentralising the blockchain
 
 
-app.run(host = '0.0.0.0', port = 5000)
+app.run(host = '0.0.0.0', port = 5002)
 
 
 

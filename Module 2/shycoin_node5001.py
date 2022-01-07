@@ -177,8 +177,4 @@ def check_validity():
 # Decentralising the blockchain
 
 
-app.run(host = '0.0.0.0', port = 5000)
-
-
-
-
+app.run(host = '0.0.0.0', port = 5001)
