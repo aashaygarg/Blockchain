@@ -1,4 +1,4 @@
-This repository contains the scripts were developed at the course:
+This repository contains the scripts that were developed at the course:
 
 Blockchain (Python)
 ICO (Python)
