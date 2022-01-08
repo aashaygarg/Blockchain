@@ -1,5 +1,3 @@
-# Module 1 - Create a Blockchain
-# Imports
 import datetime
 import hashlib
 import json
